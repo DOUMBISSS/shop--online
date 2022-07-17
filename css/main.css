@@ -718,3 +718,34 @@ footer{
   margin-bottom: 20px;
   color: var(--text-gray);
  }
+ /*----- Index 3 -----*/
+ .box--container{
+  width: 100%;
+  height: auto;
+  padding: 10px 100px 0 100px;
+  background-color: rgb(237, 235, 235);
+ }
+ .first--part{
+  border: 1px solid coral;
+  width: 100%;
+  height: 350px;
+  /* background-image: url('images/Untitled-4.jpg'); */
+ }
+ .first--part img{
+  width: 100%;
+  height: 100%;
+ }
+ .second--part{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .second--part--content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
