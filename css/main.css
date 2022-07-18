@@ -755,14 +755,15 @@ footer{
     position: absolute;
     top: 100px;
     left: 500px;
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     z-index: 10000;
     border-radius: 5px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid coral;
  }
  .login--part--container{
     width: 90%;
@@ -773,13 +774,14 @@ footer{
   width: 100%;
   height: 10%;
   display: flex;
+  margin-bottom: 0.8rem;
  }
  .name--log{
   width: 90%;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  /* padding-left: 10px; */
  }
  .btn--close--login{
   display: flex;
@@ -792,7 +794,7 @@ footer{
  .login--part--container--content{
   width: 100%;
   height: 90%;
-  border: 1px solid coral;
+  /* border: 1px solid coral; */
  }
  .new{
   color: var(--pink);
@@ -805,6 +807,8 @@ footer{
   display: flex;
   align-items:center;
   justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
  }
  .google{
   width: 48%;
@@ -814,7 +818,8 @@ footer{
   display: flex;
   align-items:center;
   justify-content: center;
-  box-shadow: 0 0 20px gray;
+  border: #9b9ca9 solid 1px;
+  /* box-shadow: 0 0 20px gray; */
   cursor: pointer;
  }
  .facebook{
@@ -829,7 +834,8 @@ footer{
   /* box-shadow: 0 0 20px gray; */
  }
  .block---connexion{
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
  }
  input{
   width: 100%;
@@ -852,8 +858,17 @@ footer{
   color: white;
   cursor: pointer;
  }
+ #btn--connexion:hover{
+  color: var(--blue);
+  background-color: white;
+  border: var(--blue) 2px solid;
+ }
  .password{
   color: var(--pink);
   font-weight: bold;
   cursor: pointer;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items:center;
  }
