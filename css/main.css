@@ -50,7 +50,7 @@ header{
 .navbar{
   width: 93%;
   height: 90%;
-  border-bottom: 2px solid rgb(240, 237, 237) ;
+  /* border-bottom: 2px solid rgb(240, 237, 237) ; */
   display: flex;
 }
 .header--left{
@@ -68,7 +68,7 @@ header{
   border-radius: 5px;
   outline: none;
 }
-.header--center{
+.header--logo{
   width: 45%;
   height: 100%;
   display: flex;
@@ -82,7 +82,7 @@ header{
   align-items: center;
   justify-content: center;
 }
-#btn--login-one{
+#btn--login--connexion{
   padding: 5px;
   width: 100px;
   height: 40px;
@@ -92,14 +92,15 @@ header{
   border: 2px solid var(--blue);
   background-color: white;
   margin-right: 5px;
+  cursor: pointer;
 }
-#btn--login-one:hover{
+#btn--login--connexion:hover{
   color: white;
   background-color: var(--blue);
   border: 2px solid var(--blue);
   margin-right: 5px;
 }
-#btn--login-two{
+#btn--login--inscription{
   padding: 5px;
   width: 100px;
   height: 40px;
@@ -108,8 +109,9 @@ header{
   color: white;
   border: 2px solid var(--blue);
   background-color: var(--blue);
+  cursor: pointer;
 }
-#btn--login-two:hover{
+#btn--login--inscription:hover{
   color: var(--blue);
   background-color: white;
   border: 2px solid var(--blue);
@@ -120,12 +122,14 @@ header{
   height: 40px;
   font-size: 1.3rem;
   margin-right: 5px;
+  border: none;
 }
 #devise{
   width: 80px;
   height: 40px;
   font-size: 1.5rem;
   margin-right: 5px;
+  border: none;
 
 }
 
@@ -149,16 +153,14 @@ a:hover{
 }
 .main{
   width: 100%;
-  height: 600px;
-  /* background-image: url("icones/Groupe-45.png"); */
-  object-fit: cover;
-  background-color: rgb(94, 94, 246);
+  height: 100vh;
+  background-image: url("../icones/Groupe-45.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
 }
-/* .main img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-} */
 
 .box{
   width: 600px;
@@ -185,7 +187,7 @@ h1{
   padding: 10px;
   width: 200px;
   color: var(--pink);
-  border: 1px solid var(--pink);
+  border: 2px solid var(--pink);
   background-color: white;
   border-radius: 5px;
 }
@@ -198,32 +200,36 @@ h1{
 }
 .row{
   width: 90%;
-  height: 80%;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-around;  
 }
 .col{
-  width: 32%;
-  height: 90%;
+  width: 30%;
+  height: 200px;
+  margin-top: 1rem;
   border-radius: 5px;
   border: 1px solid rgb(235, 230, 230);
   position: relative;
-  /* background-image: url('images/xbanner-03.jpg.pagespeed.ic.1rqLomOaMb.webp'); */
 }
 .col img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
-/* .col p{
-  position: relative;
+.col p{
+  position: absolute;
   left: 10px;
   top:20px;
   color: var(--blue);
   font-weight: bold;
   font-size: 1.8rem;
-} */
+}
+.mores{
+  color: white;
+}
 .container{
   width: 100%;
   height: auto;
@@ -271,7 +277,7 @@ h4{
   flex-wrap: wrap;
 }
 .card{
-  width: 263px;
+  width: 23%;
   height: 400px;
   margin: 10px;
   display: flex;
@@ -439,6 +445,8 @@ footer{
 }
 .cart--container--block{
   width: 260px;
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
 }
@@ -573,12 +581,41 @@ footer{
   align-items: center;
   justify-content: center;
  }
- .profil--content{
+ .profil--container{
   width: 100%;
   height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+ }
+ .sub-menu{
+  width: 200px;
+  height: 170px;
+  position: absolute;
+ top: 80px;
+  left: 1170px;
+  z-index: 10000;
+  background-color: white;
+  border-radius: 5px;
+  visibility: hidden;
+  transform: rotateY(-200%); 
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transition: all .3s;
+ }
+.openProfils.sub-menu{
+  visibility: visible;
+  opacity: 1;
+  transform: rotateY(0%);
+  transition: ease-in-out 0.2s;
+ }
+ .sub-menu > ul li{
+  padding: 5px;
+  width: 190px;
+  height: 40px;
+  background-color: white;
+  color: rgb(40, 90, 40);
+  cursor: pointer;
  }
  .icon--profil{
   width: 30%;
@@ -718,7 +755,7 @@ footer{
   margin-bottom: 20px;
   color: var(--text-gray);
  }
- /*----- Index 3 -----*/
+ /*--------------------------------------- Index 3 --------------------------*/
  .box--container{
   width: 100%;
   height: auto;
@@ -726,14 +763,18 @@ footer{
   background-color: rgb(237, 235, 235);
  }
  .first--part{
-  border: 1px solid coral;
-  width: 100%;
   height: 350px;
-  /* background-image: url('images/Untitled-4.jpg'); */
+  border-radius: 5px;
  }
  .first--part img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+ /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
  }
  .second--part{
   width: 100%;
@@ -750,20 +791,28 @@ footer{
   justify-content: space-between;
  }
 
- /*----------------------------------Login part----*/
+ /*----------------------------------Login part connexion----------*/
  .login--part--connexion{
     position: absolute;
     top: 100px;
     left: 500px;
     width: 480px;
-    height: 480px;
+    height: 440px;
     z-index: 10000;
     border-radius: 5px;
     background-color: white;
+    transform: translateY(-200%);
     display: flex;
+    visibility: visible;
     align-items: center;
     justify-content: center;
     border: 1px solid coral;
+    background: linear-gradient(220 , black,black, 70%);
+ }
+ .show.login--part--connexion{
+  visibility: visible;
+  transform: translateX(0%);
+  transition: ease-in-out 1s;
  }
  .login--part--container{
     width: 90%;
@@ -772,7 +821,7 @@ footer{
  .login--part--container--header{
   border-bottom: 1px solid rgb(209, 205, 205);
   width: 100%;
-  height: 10%;
+  height: 5%;
   display: flex;
   margin-bottom: 0.8rem;
  }
@@ -781,7 +830,6 @@ footer{
   height: 100%;
   display: flex;
   align-items: center;
-  /* padding-left: 10px; */
  }
  .btn--close--login{
   display: flex;
@@ -794,7 +842,6 @@ footer{
  .login--part--container--content{
   width: 100%;
   height: 90%;
-  /* border: 1px solid coral; */
  }
  .new{
   color: var(--pink);
@@ -871,4 +918,330 @@ footer{
   height: 10%;
   display: flex;
   align-items:center;
+ }
+
+ /*----------------------------------Login part connexion----------*/
+
+  /*----------------------------------Login part inscription----------*/
+ .login--part--inscriptions{
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  width: 480px;
+  height: 700px;
+  z-index: 10000;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid coral;
+  visibility: hidden;
+  transform: translateY(-200%);
+ }
+ .show.login--part--inscriptions{
+  visibility: visible;
+  transform: translateY(0%);
+  transition: ease-in-out 1s;
+}
+ #adresse{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #9b9ca9;
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+ /*----------------------------------Login part inscription----------*/
+
+  /*---------------------------------- Paiement --------------------*/
+  .main--paiement{
+    background-color: #f1f1f1;
+    padding: 70px 200px 0 200px;
+    display: flex;
+  }
+  .main--paiement--container{
+    width: 90%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .main--paiement--container--content--box1{
+    padding: 2rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  }
+  .main--paiement--container--content--box2{
+    padding: 2rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  }
+  .info--articles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .user--info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  .contact--box{
+    width: 300px;
+    height: 60px;
+    border: 1px solid coral;
+    display: flex;
+    align-items: center;
+  }
+  .option--adresse{
+    width: 600px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border: 1px solid coral;
+  }
+  .option--paiement{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  input[type="radio"]{
+    width: 20px;
+    height: 15px;
+  }
+  #btn--paiement{
+    width: 100%;
+    color: white;
+    padding: 5px;
+    background-color: var(--blue);
+  }
+  #btn--paiement:hover{
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    background-color: white;
+  }
+    /*---------------------------------- Paiement --------------------*/
+
+.fa-list{
+  display: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.fa-magnifying-glass{
+  display: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.filter{
+  display: none;
+}
+
+ @media only screen and (max-width:375px) {
+  header{
+    height: 70px;
+  }
+  .navbar{
+    border-bottom: none;
+  }
+  .header--logo{
+    width: 20%;
+    height: 100%;
+
+  }
+  .header--center img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .header--left{
+    display: none;
+  }
+  #devise{
+    display: none;
+  }
+  #Language{
+    display: none;
+  }
+  .header--right{
+    width: 80%;
+  }
+  #btn--login-one{
+    width: 80px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  #btn--login-two{
+    width: 80px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  nav{
+    display: none;
+  }
+  .main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../icones/Groupe-45.png");
+    object-fit:cover;
+    display: flex;
+  }
+  .box{
+    width: 300px;
+    height: 300px;
+    left: 20px;
+    top: 130px;
+  }
+  h1{
+    font-size: 2.7rem;
+  }
+  .categories{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+  } 
+  .row{
+    width: 95%;
+    height: 100%;
+    display: block;
+    /* margin-top: 20px; */
+  }
+   .col{
+    width: 100%;
+    height: 27%;
+    border-radius: 5px;
+    border: 1px solid rgb(235, 230, 230);
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .col img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .col p{
+    position: absolute;
+    left: 10px;
+    top:20px;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.8rem;
+  } 
+  .fa-list{
+    display: flex;
+  }
+  .fa-list:hover{
+    color: var(--blue);
+  }
+
+  .fa-magnifying-glass{
+    display: flex;
+  }
+  .fa-magnifying-glass:hover{
+    color: var(--blue);
+  }
+  .fa-arrow-up-wide-short{
+    margin-right: 10px;
+  }
+  .filter{
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+
+  }
+  .left--part{
+    display: none;
+    }
+  .right--part{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .right--part--content{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 100%;
+    height: 420px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .card--product{
+    width: 90%;
+    height: 100%;
+  }
+  .card--product--image{
+    width: 100%;
+    height: 57%;
+  }
+  .card--product--image:hover img{
+    transform: scale(0.9);
+  }
+  .card--product--image img{
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+    transition: 0.5s ease-in-out;
+  }
+  .card--product--content{
+    width: 100%;
+    height: 43%;
+  }
+  .cart--container{
+    position: fixed;
+    top: 0;
+    left: 80px;
+    visibility: hidden;
+  }
+  /* .OpenCart.cart--container{
+    visibility: visible;
+    transform: translateX(0%);
+    transition: ease-in-out 0.8s;
+  } */
+  .cart--container--block{
+    position: absolute;
+    top: 0;
+  }
+  .btn--close{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cart--icon{
+    position: fixed;
+    top: 150px;
+    left: 300px;
+    z-index: 1000;
+  }
+  .counter{
+    position: fixed;
+    top: 170px;
+    left: 340px;
+    right: 0;
+  }
+  .fa-bag-shopping{
+      color: white;
+      cursor: pointer;
+  }
  }
