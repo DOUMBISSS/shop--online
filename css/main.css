@@ -565,7 +565,7 @@ footer{
   justify-content: center;
   cursor: pointer;
  }
-/* hfhfhf */
+/* -------------------------------------------------hfhfhf */
  .profil{
   width: 53%;
   height: 80%;
@@ -748,4 +748,112 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+ }
+
+ /*----------------------------------Login part----*/
+ .login--part--connexion{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+    z-index: 10000;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .login--part--container{
+    width: 90%;
+    height: 90%;
+ }
+ .login--part--container--header{
+  border-bottom: 1px solid rgb(209, 205, 205);
+  width: 100%;
+  height: 10%;
+  display: flex;
+ }
+ .name--log{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+ }
+ .btn--close--login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 100%;
+  cursor: pointer;
+ }
+ .login--part--container--content{
+  width: 100%;
+  height: 90%;
+  border: 1px solid coral;
+ }
+ .new{
+  color: var(--pink);
+  font-weight: bold;
+  cursor: pointer;
+ }
+ .type--of--connexion{
+  width: 100%;
+  height: 12%;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+ }
+ .google{
+  width: 48%;
+  height: 90%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  box-shadow: 0 0 20px gray;
+  cursor: pointer;
+ }
+ .facebook{
+  width: 48%;
+  height: 90%;
+  background-color: rgb(82, 141, 243);
+  border-radius: 5px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  cursor: pointer;
+  /* box-shadow: 0 0 20px gray; */
+ }
+ .block---connexion{
+  margin-top: 20px;
+ }
+ input{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* outline: none; */
+  border: 1px solid #9b9ca9;
+  font-size: 1.6rem;
+  padding-left: 10px;
+ }
+ #btn--connexion{
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+ }
+ .password{
+  color: var(--pink);
+  font-weight: bold;
+  cursor: pointer;
  }
