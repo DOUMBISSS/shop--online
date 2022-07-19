@@ -55,18 +55,21 @@ header{
 }
 .header--left{
   width: 23%;
-  height: 100%;
+  height: 90%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #search{
   width: 100%;
+  height: 4rem;
   padding: 10px;
   background-color: rgb(240, 239, 239);
   border: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   border-radius: 5px;
   outline: none;
+  margin: 0;
 }
 .header--logo{
   width: 45%;
@@ -93,6 +96,7 @@ header{
   background-color: white;
   margin-right: 5px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 #btn--login--connexion:hover{
   color: white;
@@ -110,6 +114,7 @@ header{
   border: 2px solid var(--blue);
   background-color: var(--blue);
   cursor: pointer;
+  margin-bottom: 5px;
 }
 #btn--login--inscription:hover{
   color: var(--blue);
@@ -120,8 +125,9 @@ header{
 #Language{
   width: 100px;
   height: 40px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-right: 5px;
+  margin-bottom: 5px;
   border: none;
 }
 #devise{
@@ -129,8 +135,8 @@ header{
   height: 40px;
   font-size: 1.5rem;
   margin-right: 5px;
+  margin-bottom: 5px;
   border: none;
-
 }
 
 nav{
@@ -151,7 +157,7 @@ a{
 a:hover{
   color: var(--blue);
 }
-.main{
+.main--part{
   width: 100%;
   height: 100vh;
   background-image: url("../icones/Groupe-45.png");
@@ -621,18 +627,25 @@ footer{
   cursor: pointer;
  }
  .icon--profil{
-  width: 30%;
-  height: 100%;
+  width: 20%;
+  height: 72%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+ }
+ .icon--profil img{
+  width: 100%;
+  height: 100%;
  }
  .name--user{
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content:center;
   color: black;
+  margin-left: 5px;
  }
  .liste{
   width: 20%;
@@ -737,6 +750,12 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+ }
+ .btn--cart--buy > a{
+  color: white;
+ }
+ .btn--cart--buy > a:hover{
+  color: var(--blue);
  }
  .btn--cart--add:hover{
   border-radius: 5px;
@@ -969,10 +988,10 @@ footer{
 }
  /*----------------------------------Login part inscription----------*/
 
-  /*---------------------------------- Paiement --------------------*/
+  /*----------------------------------  part----Paiement --------------------*/
   .main--paiement{
     background-color: #f1f1f1;
-    padding: 70px 200px 0 200px;
+    padding: 40px 200px 0 200px;
     display: flex;
   }
   .main--paiement--container{
@@ -992,6 +1011,13 @@ footer{
   background-color: #fff;
   margin-bottom: 2rem;
   }
+  .coupon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
   .info--articles{
     display: flex;
     align-items: center;
@@ -1003,12 +1029,16 @@ footer{
     align-items: center;
     justify-content: space-between; 
   }
-  .contact--box{
-    width: 300px;
+  .contact{
+    width: 200px;
     height: 60px;
     border: 1px solid coral;
-    display: flex;
-    align-items: center;
+    padding: 1.5rem;
+    background-color: #e1e2e9;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: 1px solid #fff;
   }
   .option--adresse{
     width: 600px;
@@ -1039,11 +1069,13 @@ footer{
     border: 2px solid var(--blue);
     background-color: white;
   }
-    /*---------------------------------- Paiement --------------------*/
- /*---------------------------------- Paiement --------------------*/
+    /*----------------------------------  part----Paiement --------------------*/
+
+
+ /*----------------------------------  part----commande --------------------*/
  .main--orders{
   background-color: #f1f1f1;
-  padding: 70px 80px 0 80px;
+  padding: 40px 80px 0 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1075,47 +1107,44 @@ footer{
  }
  .main--orders--container--right{
   width: 73%;
+  border-radius: 5px;
+ }
+.main--orders--container--right--content{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
- }
- .main--password--container--right--content{
-  width: 100%;
-  background-color: white;
- }
- input[type="text"]{
-  margin-bottom: 20px;
- }
- .main--password--container--right--content--box{
-  width: 100%;
-  background-color: white;
-  padding: 10px;
- }
-.main--orders--container--right--content{
-  width: 95%;
+  border: 1px solid coral;
+}
+.main--orders--container--right--block{
+  width: 90%;
+  height: 90%;
+  border: 1px solid coral;
 }
 .box--one{
   width: 100%;
-  /* background-color: white; */
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: white;
-
+  padding: 2rem;
 }
 .box--two{
   width: 100%;
   border-radius: 5px;
   background-color: white;
   margin-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 2rem;
 }
 .box--three{
   width: 100%;
   border-radius: 5px;
   background-color: white;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  padding: 2rem;
   
 }
  .box--file{
@@ -1140,6 +1169,7 @@ footer{
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  margin-top: 10px;
  }
  .row--content{
   width: 90%;
@@ -1174,8 +1204,29 @@ footer{
   font-weight: bold;
   cursor: pointer;
 }
-  /*---------------------------------- Paiement --------------------*/
+ /*---------------------------------- part----commande --------------------*/
 
+  /*---------------------------------- part----password --------------------*/
+
+ .main--password--container--right--content{
+  width: 100%;
+  background-color: white;
+ }
+ input[type="text"]{
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid #9b9ca9;
+  height: 50px;
+ }
+ input[type="text"]:hover{
+  border: #1320DC solid 2px;
+ }
+ .main--password--container--right--content--box{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+ }
+ /*---------------------------------- commande --------------------*/
 .fa-list{
   display: none;
   margin-left: 10px;
