@@ -198,14 +198,14 @@ h1{
   align-items: center;
   justify-content: center;
 }
-.row{
+.rows{
   width: 90%;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-around;  
 }
-.col{
+.cols{
   width: 30%;
   height: 200px;
   margin-top: 1rem;
@@ -213,13 +213,13 @@ h1{
   border: 1px solid rgb(235, 230, 230);
   position: relative;
 }
-.col img{
+.cols img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
-.col p{
+.cols p{
   position: absolute;
   left: 10px;
   top:20px;
@@ -1032,6 +1032,7 @@ footer{
     color: white;
     padding: 5px;
     background-color: var(--blue);
+    border-radius: 5px;
   }
   #btn--paiement:hover{
     color: var(--blue);
@@ -1039,6 +1040,141 @@ footer{
     background-color: white;
   }
     /*---------------------------------- Paiement --------------------*/
+ /*---------------------------------- Paiement --------------------*/
+ .main--orders{
+  background-color: #f1f1f1;
+  padding: 70px 80px 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .main--orders--container{
+  width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+ }
+ .main--orders--container--left{
+  width: 25%;
+  height: 150px;
+  background-color: white;
+  border-radius: 5px;
+ }
+ .main--orders--container--left > ul li{
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+ }
+ .main--orders--container--left > ul li:hover{
+ color: var(--blue);
+ }
+ .main--orders--container--left > ul  a{
+  text-decoration: none;
+  color: black;
+ }
+ .main--orders--container--right{
+  width: 73%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+ }
+ .main--password--container--right--content{
+  width: 100%;
+  background-color: white;
+ }
+ input[type="text"]{
+  margin-bottom: 20px;
+ }
+ .main--password--container--right--content--box{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+ }
+.main--orders--container--right--content{
+  width: 95%;
+}
+.box--one{
+  width: 100%;
+  /* background-color: white; */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+
+}
+.box--two{
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.box--three{
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+ .box--file{
+  margin: 0rem 0 2rem;
+  height: 180px;
+  border: 5px dashed var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .btn--check{
+  padding: 5px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  margin: 10px;
+ }
+ .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+ .row--content{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+ .row--content--box{
+  width: 30%;
+  height: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .col--content{
+  border:1px solid #9b9ca9;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+ }
+ .place{
+  font-weight: bold;
+ }
+ .adrresse--description{
+  color: var(--text-gray); 
+}
+.add--adresse{
+  color: var(--blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+  /*---------------------------------- Paiement --------------------*/
 
 .fa-list{
   display: none;
@@ -1119,13 +1255,13 @@ footer{
     padding: 0;
     margin-top: 50px;
   } 
-  .row{
+  .rows{
     width: 95%;
     height: 100%;
     display: block;
     /* margin-top: 20px; */
   }
-   .col{
+   .cols{
     width: 100%;
     height: 27%;
     border-radius: 5px;
@@ -1133,12 +1269,12 @@ footer{
     position: relative;
     margin-bottom: 40px;
   }
-  .col img{
+  .cols img{
     width: 100%;
     height: 100%;
     border-radius: 5px;
   }
-  .col p{
+  .cols p{
     position: absolute;
     left: 10px;
     top:20px;
