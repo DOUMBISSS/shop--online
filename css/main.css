@@ -348,6 +348,12 @@ span{
   color: white;
   cursor: pointer;
 }
+.btn--buy > a{
+  color: white;
+}
+.btn--buy > a:hover{
+  color: var(--blue);
+}
 .btn--add{
   width: 25%;
   height: 90%;
