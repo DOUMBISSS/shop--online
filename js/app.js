@@ -4,6 +4,20 @@ let rightContent= document.querySelector('.right--part--content');
 let rightPart= document.querySelector('.right--part');
 
 
+// let selectCat = document.querySelectorAll('.cols');
+// for (let i = 0 ; i < selectCat.length ; i++)
+// selectCat[i].addEventListener('mouseover',choiceCategories);
+// selectCat[i].addEventListener('mouseout',choiceCategories);
+
+// function choiceCategories(){
+//     this.classList.add("overlay");
+
+// }
+// function choiceCategories(){
+//     this.classList.remove("overlay");
+// }
+
+
 
 onglets.addEventListener('click',ongletVente);
 onglet.addEventListener('click',ongletArrivage);
@@ -16,7 +30,7 @@ function ongletArrivage(){
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -29,8 +43,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -38,11 +52,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -55,8 +68,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -64,11 +77,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -81,8 +93,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -90,11 +102,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -107,8 +118,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -116,11 +127,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -133,8 +143,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -142,11 +152,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -159,8 +168,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -168,11 +177,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -185,8 +193,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -194,11 +202,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -211,8 +218,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -220,11 +227,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -237,8 +243,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -246,11 +252,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -263,8 +268,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -272,11 +277,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -289,8 +293,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -298,11 +302,10 @@ function ongletArrivage(){
         </div>
 
     </div>
-
     <div class="card">
         <div class="card--product">
             <div class="card--product--image">
-                <a href="#"><img src="images/jupe.png" alt=""></a>
+                <a href="details articles.html"><img src="images/jupe.png" alt=""></a>
             </div>
 
             <div class="card--product--content">
@@ -315,8 +318,8 @@ function ongletArrivage(){
                     <p class="prices"> 3500 F<span> / a partir de 5 unités</span></p>
                 </div>
                 <div class="button--block">
-                    <button class="btn--one">Achetez</button>
-                    <button class="btn--two">+</button>
+                    <button class="btn--buy"><a href="details articles.html">Achetez</a></button>
+                    <button class="btn--add">+</button>
                 </div>
                 
             </div>
@@ -324,21 +327,8 @@ function ongletArrivage(){
         </div>
 
     </div>
-
-</div>
-
-<div class="more">
-    <button>Voir plus</button>
 </div>`;
 }
-
-// let buy = document.querySelector('.buy');
-// let container = document.querySelector('.container') 
-// buy.addEventListener('click',buyArticle);
-
-// function buyArticle(){
-//     document.querySelector('.container').innerHTML = 
-// }
 
 let cartContainer= document.querySelector('.cart--container');
 let cartIcon= document.querySelector('.cart--icon');
@@ -356,6 +346,9 @@ function Open() {
 function close (){
     cartContainer.classList.remove("OpenCart"); 
 }
+
+
+
 let newArt = document.querySelector('.cart--articles');
 let btnAdd= document.querySelectorAll('.btn--add');
 for (i = 0 ; i < btnAdd.length ; i++)
@@ -461,7 +454,7 @@ function openLoginConnexion(){
 
 btnInscription.addEventListener('click',openLoginInscription);
 function openLoginInscription(){
-            Inscription.classList.add("show") 
+            Inscription.classList.add("shows") 
 }
 
 function closeBtnLogins(){
@@ -479,3 +472,21 @@ function closeBtnLogins(){
 // function openProfil(){
 //     profil.classList.toggle("openProfils")
 // }
+
+let leftContainer = document.querySelector('.left--part--container');
+let btnCloseLeftPart = document.querySelector('.btn--close--left--part');
+let btnFilter= document.querySelector('.filter');
+
+btnFilter.addEventListener('click',openLeftContainer)
+btnCloseLeftPart.addEventListener('click',closeLeftContainer)
+
+function openLeftContainer(){
+    if(
+        leftContainer.classList.add("showLeftContainer")
+    )
+    closeLeftContainer();
+}
+
+function closeLeftContainer(){
+    leftContainer.classList.remove("showLeftContainer")
+}
