@@ -16,7 +16,7 @@ let rightPart= document.querySelector('.right--part');
 // function choiceCategories(){
 //     this.classList.remove("overlay");
 // }
-
+//
 
 
 onglets.addEventListener('click',ongletVente);
@@ -336,14 +336,14 @@ let btnClose= document.querySelector('.btn--close');
 
 
 
-cartIcon.addEventListener('click',Open);
+cartIcon.addEventListener('click',open);
 btnClose.addEventListener('click',close);
 let counter = document.querySelector('.counter');
 
-function Open() {
+function open() {
     cartContainer.classList.add("OpenCart");
 }
-function close (){
+function close(){
     cartContainer.classList.remove("OpenCart"); 
 }
 
@@ -358,50 +358,7 @@ btnAdd[i].addEventListener('click',addArticle);
 function addArticle () {
     document.querySelector('.counter').innerText = parseInt(document.querySelector('.counter').innerText) + 1 ;
     // newArticle();
-
     
-    document.querySelector('.cart--container').innerHTML = `<div class="cart--container--block">
-    <div class="cart--container--header">
-        <div class="cart--description">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <p>3 articles</p>
-        </div>
-        <div class="btn--close">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-    </div>
-
-    <div class="cart--container--content">
-        <div class="cart--articles">
-            <div class="button-block">
-                <div class="handle--quantity">
-                  <div class="minus"><h5>-</h5></div>
-                  <div class="qty"><h5>1</h5></div>
-                  <div class="plus"><h5>+</h5></div>
-                </div>
-            </div>
-
-            <div class="cart--articles--descriptions">
-                <div class="block--articles">
-                    <div class="articles">
-                        <img src="images/jupe.png" alt="">
-                    </div>
-
-                    <div class="articles--details">
-                        <p class="names--articles">Jupe volante</p>
-                        <p class="price--articles"> 2000 F</p>
-                        <p class="quantity">3 unités</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="btn--remove--article">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-        </div>
-    </div>
-</div>`
-btnClose();
 
 // document.querySelector('.cart--container').innerHTML = 'Your cart is empty';
 }
@@ -437,13 +394,14 @@ btnClose();
 // }
 
 let btnCloseLogin = document.querySelector('.btn--close--login');
-let btnConnexion = document.querySelector('#btn--login--connexion');
-let btnInscription = document.querySelector('#btn--login--inscription');
+let btnConnexion = document.querySelector('#btn--open--login');
+let btnOpenRegister = document.querySelector('#btn--open--register');
+let btnCloseRegister = document.querySelector('.btn--close--register');
+
 let Connexion = document.querySelector('.login--part--connexion');
-let Inscription = document.querySelector('.login--part--inscriptions');
+let registerCard = document.querySelector('.register--part');
 
 btnCloseLogin.addEventListener('click',closeBtnLogins)
-
 btnConnexion.addEventListener('click',openLoginConnexion);
 function openLoginConnexion(){
     if (
@@ -452,9 +410,10 @@ function openLoginConnexion(){
     closeBtnLogins();
 }
 
-btnInscription.addEventListener('click',openLoginInscription);
-function openLoginInscription(){
-            Inscription.classList.add("shows") 
+btnOpenRegister.addEventListener('click',toggleRegisterCard);
+btnCloseRegister.addEventListener('click',toggleRegisterCard);
+function toggleRegisterCard(){
+    registerCard.classList.toggle("shows") 
 }
 
 function closeBtnLogins(){
