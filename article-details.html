@@ -45,8 +45,8 @@
                             </div>
                         </div>
                         <div class="block--login">
-                            <button id="btn--login--connexion">Connexion</button>
-                            <button id="btn--login--inscription">Inscription</button>
+                            <button id="btn--open--login">Connexion</button>
+                            <button id="btn--open--register">Inscription</button>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-list"></i>
                         </div>
@@ -56,15 +56,79 @@
         </div>
     </header>
 
+    <div class="login--part--connexion">
+        <div class="login--part--container">
+            <div class="login--part--container--header">
+                <p class="name--log">Connexion</p>
+                <div class="btn--close--login">X</div>
+            </div>
+            <div class="login--part--container--content">
+                <p>Vous n'avez pas de compte ? <span class="new">Inscrivez-vous</span></p> 
+
+                <div class="type--of--connexion">
+                    <div class="google">
+                        <p>Connexion avec google</p>
+                    </div>
+                    <div class="facebook">
+                        <p>Connexion avec facebook</p>
+                    </div>
+                </div>
+                <p>ou</p>
+
+                <div class="block---connexion">
+                    <input type="email" name="" id="email" placeholder="Adresse email">
+                    <input type="password" name="" id="password" placeholder="Mot de passe">
+                <button id="btn--connexion">Se connecter</button>
+                </div>
+                <p class="password" >Mot de passe oublie </p>
+            </div>
+
+        </div>
+        
+    </div> 
+
+    <div class="register--part">
+        <div class="login--part--container">
+            <div class="login--part--container--header">
+                <p class="name--log">Inscription</p>
+                <div class="btn--close--register">X</div>
+            </div>
+            <div class="login--part--container--content">
+                <p>Vous n'avez pas de compte ? <span class="new">Connectez-vous</span></p> 
+
+                <div class="type--of--connexion">
+                    <div class="google">
+                        <p>Connexion avec google</p>
+                    </div>
+                    <div class="facebook">
+                        <p>Connexion avec facebook</p>
+                    </div>
+                </div>
+                <p>ou</p>
+
+                <div class="block---connexion">
+                    <input type="text" name="" placeholder="Nom">
+                    <input type="text" name="" id="" placeholder="Prenom">
+                    <input type="email" name="" id="email" placeholder="Adresse email">
+                    <input type="password" name="" id="password" placeholder="Mot de passe">
+                    <select name="" id="adresse"><option value="">Pays</option></select>
+                    <select name="" id="adresse"><option value="">Ville</option></select>
+                <button id="btn--connexion">S'inscrire</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="main--container">
         <div class="sub-menu">
             <ul>
-            <li>Profil</li>
-            <li>Mot de passe</li>
-            <li>Mes commandes</li>
-            <li>Se deconnecter</li>
+            <a href="profil.html"><li>Profil</li></a>
+            <a href="password.html"><li>Mot de passe</li></a>
+            <a href="Commande.html"><li>Mes commandes</li></a>
+            <a href="#"><li>Se deconnecter</li></a>
             </ul>
-    </div>
+        </div>
 
     <div class="main--content">
             <div class="main--content--left">
@@ -215,21 +279,12 @@
 
         </div>
     </div>
-        
-       
-        
-
-   
-        
-
- 
-
-                          
+                         
     <footer>
             <p>Tous droits réservés par © LMC-shop</p>
     </footer>
 
 
-    <script src="js/app.js"></script>
+    <script src="js/script 2.js"></script>
 </body>
 </html>

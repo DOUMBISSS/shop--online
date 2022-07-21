@@ -423,14 +423,6 @@ function closeBtnLogins(){
     
 }
 
-// let profil = document.querySelector('.sub-menu');
-// let liste = document.querySelector('.liste');
-
-// liste.addEventListener('click',openProfil);
-
-// function openProfil(){
-//     profil.classList.toggle("openProfils")
-// }
 
 let leftContainer = document.querySelector('.left--part--container');
 let btnCloseLeftPart = document.querySelector('.btn--close--left--part');
