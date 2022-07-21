@@ -434,15 +434,13 @@ footer{
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 33%;
-  left: 98%;
+  top: 3ovh;
   right: 0;
   border-radius: 50%;
   color: white;
 }
-.fa-bag-shopping{
-    color: white;
-    cursor: pointer;
+.cart--container i{
+  font-size: 3rem;
 }
 .cart--container{
   width: 300px;
@@ -450,9 +448,9 @@ footer{
   background-color: white;
   position: fixed;
   top: 0;
-  left: 1150px;
+  right: -1000px;
   visibility: hidden;
-  transform: translateX(200%);
+  transform: translateX(500%);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -460,7 +458,8 @@ footer{
 }
 .OpenCart.cart--container{
   visibility: visible;
-  transform: translateX(0%);
+  transform: translateX(420%);
+  right: 0;
   transition: ease-in-out 0.8s;
 }
 .cart--container--block{
@@ -1282,6 +1281,64 @@ footer{
   display: none;
 }
 
+.main--orders--container--right--block{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.main--orders--container--right--block--right{
+  width: 30%;
+}
+.main--orders--container--right--block--right--content{
+padding: 2rem;
+overflow: auto;
+border-radius: 5px;
+background-color: #e4e5e8;
+margin-bottom: 2rem;
+}
+.box--header{
+  padding: 2px;
+  border-bottom: #9b9ca9 solid 2px;
+}
+.date-delivery{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.box--article--value{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.main--orders--container--right--block--left{
+  width: 68%;
+  padding: 2rem;
+  background-color: white;
+}
+.tab{
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* border: 1px solid coral; */
+}
+.tab--adresse{
+  width: 68%;
+  border: 1px solid #9b9ca9;
+  padding: 2rem;
+}
+.tab--details{
+  width: 30%;
+  padding: 2rem;
+  font-size: 1.4rem;
+  border: 1px solid #9b9ca9;
+}
+.sub-total{
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
 
  @media only screen and (max-width:375px) {
   header{
@@ -1829,12 +1886,12 @@ footer{
     position: absolute;
     top: 0;
   }
-  .cart--icon{
+  /* .cart--icon{
     position: fixed;
     top: 150px;
     left: 300px;
     z-index: 1000;
-  }
+  } */
   .counter{
     position: fixed;
     top: 170px;
