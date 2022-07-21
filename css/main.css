@@ -85,7 +85,7 @@ header{
   align-items: center;
   justify-content: center;
 }
-#btn--login--connexion{
+#btn--open--login{
   padding: 5px;
   width: 100px;
   height: 40px;
@@ -98,13 +98,13 @@ header{
   cursor: pointer;
   margin-bottom: 5px;
 }
-#btn--login--connexion:hover{
+#btn--open--login:hover{
   color: white;
   background-color: var(--blue);
   border: 2px solid var(--blue);
   margin-right: 5px;
 }
-#btn--login--inscription{
+#btn--open--register{
   padding: 5px;
   width: 100px;
   height: 40px;
@@ -116,7 +116,7 @@ header{
   cursor: pointer;
   margin-bottom: 5px;
 }
-#btn--login--inscription:hover{
+#btn--open--register:hover{
   color: var(--blue);
   background-color: white;
   border: 2px solid var(--blue);
@@ -204,6 +204,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .rows{
   width: 90%;
@@ -317,6 +318,11 @@ h4{
   transform: scale(0.8);
   transition: 0.5s ease-in-out;
 }
+
+.aside{
+  position: fixed;
+  z-index: 1000;
+}
 .card--product--content{
   width: 100%;
   height: 45%;
@@ -421,44 +427,54 @@ footer{
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 30%;
-  left: 95%;
+  top: 35vh;
   right: 0;
   border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.cart--icon i {
+  font-size: 3rem;
+  color : white;
 }
 .counter{
-  width: 17px;
-  height: 17px;
+  
+  width: 25px;
+  height: 25px;
   background-color: var(--pink);
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 3ovh;
-  right: 0;
-  border-radius: 50%;
-  color: white;
+  
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.cart--container i{
-  font-size: 3rem;
-}
+
 .cart--container{
   width: 300px;
   height: 100%;
   background-color: white;
   position: fixed;
   top: 0;
+  /* visibility: hidden; */
+  /* transform: translateX(500%); */
+
   right: -1000px;
-  visibility: hidden;
-  transform: translateX(500%);
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease-in-out 0.8s;
 }
 .OpenCart.cart--container{
-  visibility: visible;
-  transform: translateX(420%);
+  /* visibility: visible; */
+  /* transform: translateX(420%); */
   right: 0;
   transition: ease-in-out 0.8s;
 }
@@ -489,10 +505,7 @@ footer{
   display: flex;
   align-items: center;
 }
-.cart--description > .fa-bag-shopping {
- color: var(--blue);
- margin-right: 10px;
-}
+
 .cart--description > p{
   color: var(--blue);
  }
@@ -840,8 +853,7 @@ footer{
  /*----------------------------------Login part connexion----------*/
  .login--part--connexion{
     position: absolute;
-    top: 100px;
-    left: 500px;
+    
     width: 480px;
     height: 440px;
     z-index: 10000;
@@ -853,7 +865,10 @@ footer{
     align-items: center;
     justify-content: center;
     border: 1px solid coral;
-    background: linear-gradient(220 , black,black, 70%);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: ease-in-out 1s;
  }
  .show.login--part--connexion{
   visibility: visible;
@@ -968,10 +983,12 @@ footer{
  /*----------------------------------Login part connexion----------*/
 
   /*----------------------------------Login part inscription----------*/
- .login--part--inscriptions{
+ .register--part{
   position: absolute;
   top: 20px;
-  left: 500px;
+  left: 0;
+  right : 0;
+  margin : 0 auto;
   width: 480px;
   height: 700px;
   z-index: 10000;
@@ -983,8 +1000,11 @@ footer{
   border: 1px solid coral;
   visibility: hidden;
   transform: translateY(-200%);
+  transition: ease-in-out 1s;
+
+  /* test */
  }
- .shows.login--part--inscriptions{
+ .shows.register--part{
   visibility: visible;
   transform: translateY(0%);
   transition: ease-in-out 1s;
@@ -1369,12 +1389,12 @@ margin-bottom: 2rem;
   .header--right{
     width: 80%;
   }
-  #btn--login--connexion{
+  #btn--open--login{
     width: 80px;
     height: 35px;
     font-size: 1.2rem;
   }
-  #btn--login--inscription{
+  #btn--open--register{
     width: 80px;
     height: 35px;
     font-size: 1.2rem;
@@ -1407,6 +1427,7 @@ margin-bottom: 2rem;
     display: flex;
     padding: 0;
     margin-top: 50px;
+   
   } 
   .rows{
     width: 95%;
@@ -1530,12 +1551,12 @@ margin-bottom: 2rem;
     width: 100%;
     height: 43%;
   }
-  .cart--container{
+  /* .cart--container{
     position: fixed;
     top: 0;
     left: 80px;
     visibility: hidden;
-  }
+  } */
   /* .OpenCart.cart--container{
     visibility: visible;
     transform: translateX(0%);
@@ -1545,25 +1566,22 @@ margin-bottom: 2rem;
     position: absolute;
     top: 0;
   }
-  .cart--icon{
+  /* .cart--icon{
     position: fixed;
-    top: 150px;
+    top: 50vh;
     left: 300px;
     z-index: 1000;
-  }
-  .counter{
+  } */
+  /* .counter{
     position: fixed;
     top: 170px;
     left: 340px;
     right: 0;
-  }
-  .fa-bag-shopping{
-      color: white;
-      cursor: pointer;
-  }
+  } */
+
   .login--part--connexion{
     top: 40px;
-    left: 5px;
+    /* left: 5px; */
     width: 360px;
     height: 470px;
  }
@@ -1585,8 +1603,8 @@ margin-bottom: 2rem;
   height: 50%;
   margin-bottom: 10px;
 }
-.login--part--inscriptions{
-  left: 5px;
+.register--part{
+  /* left: 5px; */
   width: 360px;
   height: 720px;
  }
@@ -1710,12 +1728,12 @@ margin-bottom: 2rem;
   .header--right{
     width: 80%;
   }
-  #btn--login--connexion{
+  #btn--open--login{
     width: 80px;
     height: 35px;
     font-size: 1.2rem;
   }
-  #btn--login--inscription{
+  #btn--open--register{
     width: 80px;
     height: 35px;
     font-size: 1.2rem;
@@ -1871,12 +1889,12 @@ margin-bottom: 2rem;
     width: 100%;
     height: 43%;
   }
-  .cart--container{
+  /* .cart--container{
     position: fixed;
     top: 0;
     left: 80px;
     visibility: hidden;
-  }
+  } */
   /* .OpenCart.cart--container{
     visibility: visible;
     transform: translateX(0%);
@@ -1892,19 +1910,16 @@ margin-bottom: 2rem;
     left: 300px;
     z-index: 1000;
   } */
-  .counter{
+  /* .counter{
     position: fixed;
     top: 170px;
     left: 340px;
     right: 0;
-  }
-  .fa-bag-shopping{
-      color: white;
-      cursor: pointer;
-  }
+  } */
+  
   .login--part--connexion{
     top: 40px;
-    left: 5px;
+    /* left: 5px; */
     width: 360px;
     height: 470px;
  }
@@ -1926,8 +1941,8 @@ margin-bottom: 2rem;
   height: 50%;
   margin-bottom: 10px;
 }
-.login--part--inscriptions{
-  left: 5px;
+.register--part{
+  /* left: 5px; */
   width: 360px;
   height: 720px;
  }
