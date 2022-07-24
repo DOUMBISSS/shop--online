@@ -65,28 +65,7 @@ function addArticle () {
 // </div>`
 // }
 
-// let btnCloseLogin = document.querySelector('.btn--close--login');
-let btnConnexion = document.querySelector('#btn--open--login');
-let btnOpenRegister = document.querySelector('#btn--open--register');
-let btnCloseRegister = document.querySelector('.btn--close--register');
 
-let Connexion = document.querySelector('.login--part--connexion');
-let registerCard = document.querySelector('.register--part');
-
-// btnCloseLogin.addEventListener('click',closeBtnLogins)
-// btnConnexion.addEventListener('click',openLoginConnexion);
-// function openLoginConnexion(){
-//     if (
-//         Connexion.classList.add("show")
-//     )
-//     closeBtnLogins();
-// }
-
-// btnOpenRegister.addEventListener('click',toggleRegisterCard);
-// btnCloseRegister.addEventListener('click',toggleRegisterCard);
-// function toggleRegisterCard(){
-//     registerCard.classList.toggle("shows") 
-// }
 
 function closeBtnLogins(){
     Connexion.classList.remove("show")
