@@ -356,42 +356,10 @@ btnAdd[i].addEventListener('click',addArticle);
 
 
 function addArticle () {
-    document.querySelector('.counter').innerText = parseInt(document.querySelector('.counter').innerText) + 1 ;
-    // newArticle();
-    
-
-// document.querySelector('.cart--container').innerHTML = 'Your cart is empty';
+    document.querySelector('.counter').innerText = parseInt(document.querySelector('.counter').innerText) + 1;
+    numArticle();
 }
 
-// function newArticle(){
-//     document.querySelector('.counter').innerHTML =`<div class="cart--articles">
-//     <div class="button-block">
-//         <div class="handle--quantity">
-//           <div class="minus"><h5>-</h5></div>
-//           <div class="qty"><h5>1</h5></div>
-//           <div class="plus"><h5>+</h5></div>
-//         </div>
-//     </div>
-
-//     <div class="cart--articles--descriptions">
-//         <div class="block--articles">
-//             <div class="articles">
-//                 <img src="images/jupe.png" alt="">
-//             </div>
-
-//             <div class="articles--details">
-//                 <p class="names--articles">Jupe volante</p>
-//                 <p class="price--articles"> 2000 F</p>
-//                 <p class="quantity">3 unités</p>
-//             </div>
-//         </div>
-//     </div>
-
-//     <div class="btn--remove--article">
-//         <i class="fa-solid fa-xmark"></i>
-//     </div>
-// </div>`
-// }
 
 let btnCloseLogin = document.querySelector('.btn--close--login');
 let btnConnexion = document.querySelector('#btn--open--login');
@@ -440,4 +408,9 @@ function openLeftContainer(){
 
 function closeLeftContainer(){
     leftContainer.classList.remove("showLeftContainer")
+}
+
+let number = document.querySelector('.numbers--articles');
+function numArticle(){
+    document.querySelector('.numbers--articles').innerText = parseInt(document.querySelector('.counter').innerText) + 1 ;
 }

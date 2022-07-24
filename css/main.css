@@ -445,12 +445,9 @@ footer{
   color: white;
   text-align: center;
   border-radius: 50%;
-  
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  
   position: absolute;
   top: 10px;
   right: 10px;
@@ -464,7 +461,6 @@ footer{
   top: 0;
   /* visibility: hidden; */
   /* transform: translateX(500%); */
-
   right: -1000px;
   z-index: 1000;
   display: flex;
@@ -477,6 +473,11 @@ footer{
   /* transform: translateX(420%); */
   right: 0;
   transition: ease-in-out 0.8s;
+}
+.cart--description i {
+  font-size: 2rem;
+  margin-right: 10px;
+  color : var(--blue);
 }
 .cart--container--block{
   width: 260px;
@@ -629,7 +630,7 @@ footer{
   width: 200px;
   height: 170px;
   position: absolute;
- top: 80px;
+  top: 80px;
   right: 70px;
   z-index: 10000;
   background-color: white;
@@ -920,6 +921,9 @@ footer{
   justify-content: center;
   width: 10%;
   height: 100%;
+  cursor: pointer;
+ }
+ .btn--close--register{
   cursor: pointer;
  }
  .login--part--container--content{
@@ -1432,8 +1436,7 @@ margin-bottom: 2rem;
     display: none;
   }
   .main--part{
-    width: 100%;
-    height: 100vh;
+    height: 60vh;
     background-image: url("../icones/Groupe-45.png");
     background-size: cover;
     background-position: right;
@@ -1444,11 +1447,11 @@ margin-bottom: 2rem;
   .box{
     width: 300px;
     height: 300px;
-    left: 50%;
-    top: 40%;
+    left: 45%;
+    top: 60%;
   }
   h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .categories{
     width: 100%;
@@ -1579,33 +1582,10 @@ margin-bottom: 2rem;
     width: 100%;
     height: 43%;
   }
-  /* .cart--container{
-    position: fixed;
-    top: 0;
-    left: 80px;
-    visibility: hidden;
-  } */
-  /* .OpenCart.cart--container{
-    visibility: visible;
-    transform: translateX(0%);
-    transition: ease-in-out 0.8s;
-  } */
   .cart--container--block{
     position: absolute;
     top: 0;
   }
-  /* .cart--icon{
-    position: fixed;
-    top: 50vh;
-    left: 300px;
-    z-index: 1000;
-  } */
-  /* .counter{
-    position: fixed;
-    top: 170px;
-    left: 340px;
-    right: 0;
-  } */
 
   .login--part--connexion{
     top: 40px;
@@ -1632,7 +1612,6 @@ margin-bottom: 2rem;
   margin-bottom: 10px;
 }
 .register--part{
-  /* left: 5px; */
   width: 360px;
   height: 720px;
  }
@@ -1739,7 +1718,6 @@ margin-bottom: 2rem;
 
  }
  @media only screen and (min-width: 410px) and (max-width: 450px) {
-
   header{
     height: 70px;
   }
@@ -1768,6 +1746,7 @@ margin-bottom: 2rem;
   .header--right{
     width: 80%;
   }
+
   #btn--open--login{
     width: 80px;
     height: 35px;
@@ -1782,8 +1761,7 @@ margin-bottom: 2rem;
     display: none;
   }
   .main--part{
-    width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url("../icones/Groupe-45.png");
     background-size: cover;
     background-position: right;
@@ -1794,8 +1772,8 @@ margin-bottom: 2rem;
   .box{
     width: 300px;
     height: 300px;
-    left: 50%;
-    top: 40%;
+    left: 45%;
+    top: 50%;
   }
   h1{
     font-size: 2.5rem;
@@ -1806,12 +1784,12 @@ margin-bottom: 2rem;
     display: flex;
     padding: 0;
     margin-top: 50px;
+   
   } 
   .rows{
     width: 95%;
     height: 100%;
     display: block;
-    /* margin-top: 20px; */
   }
    .cols{
     width: 100%;
@@ -1913,8 +1891,10 @@ margin-bottom: 2rem;
     height: 100%;
   }
   .card--product--image{
-    width: 100%;
+    width: 70%;
     height: 57%;
+    margin-left: 50px;
+
   }
   .card--product--image:hover img{
     transform: scale(0.9);
@@ -1929,37 +1909,13 @@ margin-bottom: 2rem;
     width: 100%;
     height: 43%;
   }
-  /* .cart--container{
-    position: fixed;
-    top: 0;
-    left: 80px;
-    visibility: hidden;
-  } */
-  /* .OpenCart.cart--container{
-    visibility: visible;
-    transform: translateX(0%);
-    transition: ease-in-out 0.8s;
-  } */
   .cart--container--block{
     position: absolute;
     top: 0;
   }
-  /* .cart--icon{
-    position: fixed;
-    top: 150px;
-    left: 300px;
-    z-index: 1000;
-  } */
-  /* .counter{
-    position: fixed;
-    top: 170px;
-    left: 340px;
-    right: 0;
-  } */
-  
+
   .login--part--connexion{
     top: 40px;
-    /* left: 5px; */
     width: 360px;
     height: 470px;
  }
@@ -1982,7 +1938,6 @@ margin-bottom: 2rem;
   margin-bottom: 10px;
 }
 .register--part{
-  /* left: 5px; */
   width: 360px;
   height: 720px;
  }
@@ -2050,10 +2005,17 @@ margin-bottom: 2rem;
   align-items: center;
   justify-content: center;
  }
- #coupon{
+ .coupon{
+  display: flex;
+  align-items: center;
+}
+ #coupons{
   margin-top: 20px;
-  width: 100px;
+  width: 200px;
   border-radius: 5px 0 0 5px;
+}
+.info--articles{
+  display: block;
 }
 .row--content{
   display: block;
@@ -2079,5 +2041,4 @@ margin-bottom: 2rem;
   width: 100%;
   height: auto;
  }
-
  }

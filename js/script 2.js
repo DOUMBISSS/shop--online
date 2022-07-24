@@ -61,10 +61,3 @@ btnCloseRegister.addEventListener('click',toggleRegisterCard);
 function toggleRegisterCard(){
     registerCard.classList.toggle("shows") 
 }
-
-// function closeBtnLogins(){
-//     Connexion.classList.remove("show")
-// //     for ( i =0 ; i < btnCloseLogin ; i++)
-// // btnCloseLogin[i].classList.remove("show");
-    
-// }

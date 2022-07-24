@@ -29,43 +29,36 @@ btnAdd[i].addEventListener('click',addArticle);
 
 function addArticle () {
     document.querySelector('.counter').innerText = parseInt(document.querySelector('.counter').innerText) + 1 ;
-    // newArticle();
-    
-
-// document.querySelector('.cart--container').innerHTML = 'Your cart is empty';
+    numArticle();
 }
 
-// function newArticle(){
-//     document.querySelector('.counter').innerHTML =`<div class="cart--articles">
-//     <div class="button-block">
-//         <div class="handle--quantity">
-//           <div class="minus"><h5>-</h5></div>
-//           <div class="qty"><h5>1</h5></div>
-//           <div class="plus"><h5>+</h5></div>
-//         </div>
-//     </div>
+let number = document.querySelector('.numbers--articles');
+function numArticle(){
+    document.querySelector('.numbers--articles').innerText = parseInt(document.querySelector('.counter').innerText) + 1 ;
+}
 
-//     <div class="cart--articles--descriptions">
-//         <div class="block--articles">
-//             <div class="articles">
-//                 <img src="images/jupe.png" alt="">
-//             </div>
+let btnCloseLogin = document.querySelector('.btn--close--login');
+let btnConnexion = document.querySelector('#btn--open--login');
+let btnOpenRegister = document.querySelector('#btn--open--register');
+let btnCloseRegister = document.querySelector('.btn--close--register');
 
-//             <div class="articles--details">
-//                 <p class="names--articles">Jupe volante</p>
-//                 <p class="price--articles"> 2000 F</p>
-//                 <p class="quantity">3 unités</p>
-//             </div>
-//         </div>
-//     </div>
+let Connexion = document.querySelector('.login--part--connexion');
+let registerCard = document.querySelector('.register--part');
 
-//     <div class="btn--remove--article">
-//         <i class="fa-solid fa-xmark"></i>
-//     </div>
-// </div>`
-// }
+btnCloseLogin.addEventListener('click',closeBtnLogins)
+btnConnexion.addEventListener('click',openLoginConnexion);
+function openLoginConnexion(){
+    if (
+        Connexion.classList.add("show")
+    )
+    closeBtnLogins();
+}
 
-
+btnOpenRegister.addEventListener('click',toggleRegisterCard);
+btnCloseRegister.addEventListener('click',toggleRegisterCard);
+function toggleRegisterCard(){
+    registerCard.classList.toggle("shows") 
+}
 
 function closeBtnLogins(){
     Connexion.classList.remove("show")
@@ -87,7 +80,6 @@ function openProfil(){
 // let selectCat = document.querySelectorAll('.cols');
 // for (let i = 0 ; i < selectCat.length ; i++)
 // selectCat[i].addEventListener('mouseover',choiceCategories);
-// selectCat[i].addEventListener('mouseout',choiceCategories);
 
 // function choiceCategories(){
 //     this.classList.add("overlay");
