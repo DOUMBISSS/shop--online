@@ -7,7 +7,6 @@ let rightPart= document.querySelector('.right--part');
 // let selectCat = document.querySelectorAll('.cols');
 // for (let i = 0 ; i < selectCat.length ; i++)
 // selectCat[i].addEventListener('mouseover',choiceCategories);
-// selectCat[i].addEventListener('mouseout',choiceCategories);
 
 // function choiceCategories(){
 //     this.classList.add("overlay");
@@ -16,7 +15,7 @@ let rightPart= document.querySelector('.right--part');
 // function choiceCategories(){
 //     this.classList.remove("overlay");
 // }
-//
+
 
 
 onglets.addEventListener('click',ongletVente);

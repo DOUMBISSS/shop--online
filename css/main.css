@@ -235,15 +235,6 @@ h1{
   font-weight: bold;
   font-size: 1.8rem;
 }
-#mores{
-  color: black;
-  margin-top: 30px;
-  font-weight: normal;
-  text-decoration: underline;
-  visibility: hidden;
-  transform: rotateY(-200%);
-  transition: ease-in 1s;
-}
 .container{
   width: 100%;
   height: auto;
@@ -831,33 +822,38 @@ footer{
  .first--part{
   height: 350px;
   border-radius: 5px;
+  background-image: url("../images/Untitled-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
  }
  .first--part img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 5px;
-  background-repeat: no-repeat;
- /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
  }
  .first--part--blur{
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.2;
-  position: relative;
-  right: 0;
-  left: 0;
-
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px;
  }
- .title{
-  font-size: 4rem;
+ .first--part--blur p{
+  color: white;
+  font-size: 5rem;
   position: absolute;
   right: 0;
   left: 0;
+  z-index: 10;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 5;
  }
  .second--part{
   width: 100%;
@@ -1307,12 +1303,28 @@ footer{
 .filter{
   display: none;
 }
+/* #mores{
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin-top: 30px;
+  font-weight: normal;
+  text-decoration: underline;
+  visibility: hidden;
+  transform: rotateY(-200%);
+  transition: ease-in 1s;
+  background-color: var(--blue);
+  opacity: 0.3;
+  position:absolute;
+  right: 0;
+  left: 0;
+}
 .overlay #mores{
-  opacity: 1;
+  opacity: 0.5;
   visibility: visible;
   transform: rotateY(0%);
   transition: ease-in 0.5s;
-}
+} */
 .left--part--container{
   visibility: hidden;
    transform: rotateX(-200%);
@@ -1431,6 +1443,9 @@ margin-bottom: 2rem;
     width: 80px;
     height: 35px;
     font-size: 1.2rem;
+  }
+  .cart--icon {
+    top: 60vh;
   }
   nav{
     display: none;
@@ -1768,6 +1783,9 @@ margin-bottom: 2rem;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
+  }
+  .cart--icon {
+    top: 60vh;
   }
   .box{
     width: 300px;
