@@ -70,12 +70,11 @@ function closeBtnLogins(){
 let profil = document.querySelector('.sub-menu');
 let liste = document.querySelector('.liste');
 
-liste.addEventListener('click',openProfil);
+liste.addEventListener('mouseover',openProfil);
 
 function openProfil(){
     profil.classList.toggle("openProfils")
 }
-
 
 // let selectCat = document.querySelectorAll('.cols');
 // for (let i = 0 ; i < selectCat.length ; i++)

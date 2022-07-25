@@ -293,12 +293,18 @@ h4{
   border-radius: 5px;
 }
 .card--product{
-  width: 90%;
   height: 95%;
 }
 .card--product--image{
   width: 100%;
   height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card--product--image--box{
+  width: 250px;
+  height: 250px;
 }
 .card--product--image:hover img{
   transform: scale(0.9);
@@ -627,17 +633,15 @@ footer{
   background-color: white;
   border-radius: 5px;
   visibility: hidden;
-  transform: rotateY(-200%); 
-  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 9px black ;
   opacity: 0;
-  transition: all .3s;
+  transition: ease-in-out 0.3s;
   cursor: pointer;
  }
 .openProfils.sub-menu{
   visibility: visible;
   opacity: 1;
-  transform: rotateY(0%);
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.3s;
  }
  .sub-menu > ul li{
   padding: 5px;
@@ -1067,20 +1071,19 @@ footer{
     align-items: center;
     margin-bottom: 10px;
   }
-  .btn--blue{
-  padding: 5px;
-  background-color: var(--blue);
-  color: white;
-  font-size: 1.6rem;
-  border-radius: 0 5px 5px 0;
-  margin: 0;
-  }
   #coupon{
     margin-top: 20px;
     width: 200px;
     border-radius: 5px 0 0 5px;
   }
-
+  .btn--blue{
+    padding: 5px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+    }
   .info--articles{
     display: flex;
     align-items: center;
@@ -1326,10 +1329,9 @@ footer{
   transition: ease-in 0.5s;
 } */
 .left--part--container{
-  visibility: hidden;
-   transform: rotateX(-200%);
+  position: fixed;
+  left : -1000px;
   transition: ease-in-out 2s;
-  display: none;
 }
 .btn--close--left--part{
   position: relative;
@@ -1404,7 +1406,7 @@ margin-bottom: 2rem;
   margin-bottom: 10px;
 }
 
- @media only screen and (max-width:380px) {
+ @media only screen and (max-width:576px) {
   header{
     height: 70px;
   }
@@ -1452,17 +1454,12 @@ margin-bottom: 2rem;
   }
   .main--part{
     height: 60vh;
-    background-image: url("../icones/Groupe-45.png");
-    background-size: cover;
     background-position: right;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
   }
   .box{
     width: 300px;
     height: 300px;
-    left: 45%;
+    left: 43%;
     top: 60%;
   }
   h1{
@@ -1474,7 +1471,6 @@ margin-bottom: 2rem;
     display: flex;
     padding: 0;
     margin-top: 50px;
-   
   } 
   .rows{
     width: 95%;
@@ -1529,52 +1525,33 @@ margin-bottom: 2rem;
     margin: 20px;
     cursor: pointer;
     border: 1px solid #9b9ca9;
-
   }
   .left--part--container{
     width: 250px;
     height: 100vh;
     padding: 2rem;
     background-color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
-     /* visibility: hidden; */
+    position: fixed;
+    box-shadow: 0px 0px 9px black;
      display: block;
      z-index: 10000;
-     transform: rotateX(-200%);
-    transition: ease-in-out 0.3s;
+    transition: ease-in 0.5s;
+    top: 0;
   }
   .showLeftContainer.left--part--container{
-    visibility:visible;
-    transform: rotateX(0%);
-   transition: ease-in-out 2s;
+    left: 0;
+   transition: ease-in 0.5s;
   }
   .left--part{
     display: none;
     }
   .right--part{
     width: 100%;
-    height: 100%;
     display: block;
-  }
-  .right--part--content{
-    width: 100%;
-    height: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    /* animation: fadeIn 5s ;  */
   }
   .card{
     width: 100%;
     height: 420px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
   }
   .card--product{
     width: 90%;
@@ -1584,29 +1561,18 @@ margin-bottom: 2rem;
     width: 100%;
     height: 57%;
   }
-  .card--product--image:hover img{
-    transform: scale(0.9);
-  }
-  .card--product--image img{
-    width: 100%;
-    height: 100%;
-    transform: scale(0.8);
-    transition: 0.5s ease-in-out;
-  }
   .card--product--content{
-    width: 100%;
-    height: 43%;
+    height: 40%;
   }
   .cart--container--block{
     position: absolute;
     top: 0;
   }
 
-  .login--part--connexion{
-    top: 40px;
-    /* left: 5px; */
-    width: 360px;
-    height: 470px;
+.login--part--connexion{
+  top: 40px;
+  width: 360px;
+  height: 470px;
  }
 .type--of--connexion{
   width: 100%;
@@ -1644,8 +1610,6 @@ margin-bottom: 2rem;
  display: none;
  }
  .block--login{
-  width: 53%;
-  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1660,10 +1624,6 @@ margin-bottom: 2rem;
  .main--content--left{
   width: 100%;
   height: 530px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
  }
  .images--container img{
   width: 90%;
@@ -1731,332 +1691,4 @@ margin-bottom: 2rem;
   height: auto;
  }
 
- }
- @media only screen and (min-width: 410px) and (max-width: 450px) {
-  header{
-    height: 70px;
-  }
-  .navbar{
-    border-bottom: none;
-  }
-  .header--logo{
-    width: 20%;
-    height: 100%;
-
-  }
-  .header--logo img{
-    width: 100%;
-    height: 100%;
-  }
-
-  .header--left{
-    display: none;
-  }
-  #devise{
-    display: none;
-  }
-  #Language{
-    display: none;
-  }
-  .header--right{
-    width: 80%;
-  }
-
-  #btn--open--login{
-    width: 80px;
-    height: 35px;
-    font-size: 1.2rem;
-  }
-  #btn--open--register{
-    width: 80px;
-    height: 35px;
-    font-size: 1.2rem;
-  }
-  nav{
-    display: none;
-  }
-  .main--part{
-    height: 80vh;
-    background-image: url("../icones/Groupe-45.png");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-  }
-  .cart--icon {
-    top: 60vh;
-  }
-  .box{
-    width: 300px;
-    height: 300px;
-    left: 45%;
-    top: 50%;
-  }
-  h1{
-    font-size: 2.5rem;
-  }
-  .categories{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    padding: 0;
-    margin-top: 50px;
-   
-  } 
-  .rows{
-    width: 95%;
-    height: 100%;
-    display: block;
-  }
-   .cols{
-    width: 100%;
-    height: 27%;
-    border-radius: 5px;
-    border: 1px solid rgb(235, 230, 230);
-    position: relative;
-    margin-bottom: 40px;
-  }
-  .cols img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
-  .cols p{
-    position: absolute;
-    left: 10px;
-    top:20px;
-    color: var(--blue);
-    font-weight: bold;
-    font-size: 1.8rem;
-  } 
-  .fa-list{
-    display: flex;
-  }
-  .fa-list:hover{
-    color: var(--blue);
-  }
-
-  .fa-magnifying-glass{
-    display: flex;
-  }
-  .fa-magnifying-glass:hover{
-    color: var(--blue);
-  }
-  .fa-arrow-up-wide-short{
-    margin-right: 10px;
-  }
-  .filter{
-    width: 110px;
-    height: 50px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    align-items: center;
-    margin: 20px;
-    cursor: pointer;
-    border: 1px solid #9b9ca9;
-
-  }
-  .left--part--container{
-    width: 250px;
-    height: 100vh;
-    padding: 2rem;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.08);
-     /* visibility: hidden; */
-     display: block;
-     z-index: 10000;
-     transform: rotateX(-200%);
-    transition: ease-in-out 0.3s;
-  }
-  .showLeftContainer.left--part--container{
-    visibility:visible;
-    transform: rotateX(0%);
-   transition: ease-in-out 2s;
-  }
-  .left--part{
-    display: none;
-    }
-  .right--part{
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  .right--part--content{
-    width: 100%;
-    height: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    /* animation: fadeIn 5s ;  */
-  }
-  .card{
-    width: 100%;
-    height: 420px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
-  }
-  .card--product{
-    width: 90%;
-    height: 100%;
-  }
-  .card--product--image{
-    width: 70%;
-    height: 57%;
-    margin-left: 50px;
-
-  }
-  .card--product--image:hover img{
-    transform: scale(0.9);
-  }
-  .card--product--image img{
-    width: 100%;
-    height: 100%;
-    transform: scale(0.8);
-    transition: 0.5s ease-in-out;
-  }
-  .card--product--content{
-    width: 100%;
-    height: 43%;
-  }
-  .cart--container--block{
-    position: absolute;
-    top: 0;
-  }
-
-  .login--part--connexion{
-    top: 40px;
-    width: 360px;
-    height: 470px;
- }
-.type--of--connexion{
-  width: 100%;
-  display: block;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
- }
-.google{
-  font-size: 1.2rem;
-  width: 100%;
-  height: 50%;
-  margin-bottom: 10px;
-  }
-.facebook{
-  font-size: 1.2rem;
-  width: 100%;
-  height: 50%;
-  margin-bottom: 10px;
-}
-.register--part{
-  width: 360px;
-  height: 720px;
- }
- .box--container{
-  width: 100%;
-  height: auto;
-  padding: 50px 5px 0 5px;
-  background-color: rgb(237, 235, 235);
- }
- .first--part{
-  height: 280px;
-  border-radius: 5px;
- }
-.profil--container{
- display: none;
- }
- .block--login{
-  width: 53%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main--container{
-  padding: 10px 10px 0 10px;
-}
-.main--content{
-  width: 100%;
-  display: block;
- }
- .main--content--left{
-  width: 100%;
-  height: 530px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
- }
- .images--container img{
-  width: 90%;
-  height: 70%;
- }
- .main--content--right{
-  width: 100%;
-  margin-bottom: 20px;
- }
- .block--button{
-  width: 100%;
- }
- .details--articles{
-  width: 100%;
-  margin-top: 0.8rem;
-  color: var(--text-gray);
- }
- .main--articles{
-  width: 100%;
-  height: auto;
-  background-color: #f1f1f1;
-  padding: 10px 0 30px 0;
- }
- .main--paiement{
-  background-color: #f1f1f1;
-  padding: 40px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- .coupon{
-  display: flex;
-  align-items: center;
-}
- #coupons{
-  margin-top: 20px;
-  width: 200px;
-  border-radius: 5px 0 0 5px;
-}
-.info--articles{
-  display: block;
-}
-.row--content{
-  display: block;
- }
- .row--content--box{
-  width: 100%;
-  margin-bottom: 20px;
- }
- .main--orders{
-  padding: 40px 10px 0 10px;
- }
- .main--orders--container{
-    width: 100%;
-    height: auto;
-    margin-bottom: 3rem;
-    display: block;
- }
- .main--orders--container--left{
-  width: 100%;
-  height: auto;
- }
- .main--orders--container--right{
-  width: 100%;
-  height: auto;
- }
  }
