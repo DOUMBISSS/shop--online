@@ -1535,12 +1535,12 @@ margin-bottom: 2rem;
     box-shadow: 0px 0px 9px black;
      display: block;
      z-index: 10000;
-    transition: ease-in 0.5s;
+    transition: ease-in 1.5s;
     top: 0;
   }
   .showLeftContainer.left--part--container{
     left: 0;
-   transition: ease-in 0.5s;
+   transition: ease-in 1s;
   }
   .left--part{
     display: none;
