@@ -90,3 +90,24 @@ function openProfil(){
 //
 
 // 
+let BtnMenuSidebar = document.querySelector('.menu--sidebar');
+let MenuSidebar = document.querySelector('.navbar--container');
+let BtnCloseMenuSidebar = document.querySelector('.btn--close--navbar');
+
+BtnMenuSidebar.addEventListener('click',sidebar);
+BtnCloseMenuSidebar.addEventListener('click',sidebar);
+
+function sidebar(){
+    MenuSidebar.classList.toggle("openSidebar")
+}
+
+let BtnSearchbar = document.querySelector('.menu--search');
+let searchBarNav = document.querySelector('.navbar--search');
+let BtnCloseSearch = document.querySelector('.btn--close--searchbar');
+
+BtnSearchbar.addEventListener('click',searchBar);
+BtnCloseSearch.addEventListener('click',searchBar);
+
+function searchBar(){
+    searchBarNav.classList.toggle("openSearchbar")
+}
