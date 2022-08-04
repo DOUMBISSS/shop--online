@@ -893,6 +893,7 @@ footer{
     align-items: center;
     justify-content: center;
     border: 1px solid #9b9ca9;
+    top: 50px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -1803,14 +1804,6 @@ border-radius: 10px;
 }
 .main--orders--container--right--block--right{
   width: 100%;
-}
-.main--orders--container--right--block--right--content{
-padding: 1.5rem;
-overflow: auto;
-border-radius: 5px;
-background-color: white;
-margin-bottom: 1rem;
-border-radius: 10px;
 }
 .main--orders--container--right--block--left{
   width: 100%;
