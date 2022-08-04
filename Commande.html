@@ -24,50 +24,93 @@
     
             <div class="header--right">
 
-                <select name="" id="Language">
+                    <select name="" id="Language">
+                        <option value="">Francais</option>
+                        <option value="">Anglais</option>
+                        <option value="">Chinois</option>
+                    </select>
+
+                    <select name="" id="devise">
+                        <option value="">XOF</option>
+                        <option value="">USD</option>
+                        <option value="">STD</option>
+                    </select>
+
+                    <div class="profil">
+                        <div class="profil--container">
+                            <div class="icon--profil">
+                                <img src="icones/Ellipse 1.png" alt="">
+                            </div>
+    
+                          <p class="name--user">Doumbia Fode</p>
+                            <div class="liste">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="block--login">
+                            <div class="icon--profil">
+                                <img src="icones/Ellipse 1.png" alt="">
+                            </div>
+                            <!-- <button id="btn--open--login">Connexion</button>
+                            <button id="btn--open--register">Inscription</button> -->
+                            <div class="menu--search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="menu--sidebar">
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="navbar--container">
+        <div class="navbar--container--block">
+            <div class="btn--close--navbar">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <a href="Articles.html"><li>Categories</li></a>
+                <a href="Articles.html"><li>Vetements</li></a>
+                <a href="Articles.html"><li>Accessoires</li></a>
+                <a href="Articles.html"><li>Chaussures</li></a>
+            </ul>
+
+            <div id="devises">
+                <select name="" id="devises">
                     <option value="">Francais</option>
                     <option value="">Anglais</option>
                     <option value="">Chinois</option>
                 </select>
+            </div>
 
-                <select name="" id="devise">
+            <div id="devises">
+                <select name="" id="devises">
                     <option value="">XOF</option>
                     <option value="">USD</option>
                     <option value="">STD</option>
                 </select>
-
-                <div class="profil">
-                    <div class="profil--container">
-                        <div class="icon--profil">
-                            <img src="icones/Ellipse 1.png" alt="">
-                        </div>
-
-                      <p class="name--user">Doumbia Fode</p>
-                        <div class="liste">
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <div class="sub-menu">
-                            <ul>
-                            <a href="profil.html"><li>Profil</li></a>
-                            <a href="password.html"><li>Mot de passe</li></a>
-                            <a href="Commande.html"><li>Mes commandes</li></a>
-                            <a href="#"><li>Se deconnecter</li></a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
         </div>
+    </div>
+    <div class="navbar--search">
+       <div class="navbar--search--block">
+        <input type="text" name="" id="searchbar" placeholder="Rechercher un produit...">
+        <div class="btn--close--searchbar">
+            <i class="fa-solid fa-xmark"></i>
         </div>
-    </header>
-        <!-- <img src="icones/Groupe-45.png" alt=""> -->
+       </div>
+    </div>
+
         <div class="cart--icon">
             <i class="fa-solid fa-bag-shopping"></i>
             <div class="counter">1</div>
         </div>
 
         <div class="cart--container">
-            <!-- <h3>Your card is empty</h3> -->
              <div class="cart--container--block">
                 <div class="cart--container--header">
                     <div class="cart--description">
@@ -126,27 +169,32 @@
                         <div class="main--orders--container--right--block">
                             <div class="main--orders--container--right--block--right">
                                 <div class="main--orders--container--right--block--right--content">
-                                    <p class="box--header">Commande #10</p>
-                                    <div class="date-delivery">
-                                        <p>Date de la livraison</p>
-                                        <p>le 24 Octobre <br> 2022</p>
-                                    </div>
-                                    <div class="date-delivery">
-                                        <p>Date de la livraison</p>
-                                        <p>le 24 Octobre <br> 2022</p>
-                                    </div>
-                                    <div class="box--article--value">
-                                        <p>Montant:</p>
-                                        <p> 2000 frs</p>
-                                    </div>
-
-                                    <div class="box--article--value">
-                                        <p>Prix total:</p>
-                                        <p> 20000 frs</p>
+                                    <div class="main--orders--container--right--block--right--content--box">
+                                        <p class="box--header">Commande #10</p>
+                                        <div class="date-delivery">
+                                            <p>Date de la livraison</p>
+                                            <p>le 24 Octobre <br> 2022</p>
+                                        </div>
+                                        <div class="date-delivery">
+                                            <p>Date de la livraison</p>
+                                            <p>le 24 Octobre <br> 2022</p>
+                                        </div>
+                                        <div class="box--article--value">
+                                            <p>Montant:</p>
+                                            <p> 2000 frs</p>
+                                        </div>
+    
+                                        <div class="box--article--value">
+                                            <p>Prix total:</p>
+                                            <p> 20000 frs</p>
+                                        </div>
+    
                                     </div>
 
                                 </div>
+
                                 <div class="main--orders--container--right--block--right--content">
+                                    <div class="main--orders--container--right--block--right--content--box">
                                     <p class="box--header">Commande #11</p>
                                     <div class="date-delivery">
                                         <p>Date de la livraison</p>
@@ -164,6 +212,7 @@
                                     <div class="box--article--value">
                                         <p>Prix total:</p>
                                         <p> 20000 frs</p>
+                                    </div>
                                     </div>
 
                                 </div>
@@ -197,6 +246,10 @@
                                         <p>4000 frs</p>
                                     </div>
                                     </div>
+
+                                </div>
+
+                                <div class="step--of--livraison">
 
                                 </div>
 
